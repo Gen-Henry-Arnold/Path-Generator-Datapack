@@ -1,5 +1,5 @@
 # installation message
-	tellraw @a [{"text":"Path Generator Datapack V1.1 installed!","color":"green"}]
+	tellraw @a [{"text":"Path Generator Datapack V1.3 installed!","color":"green"}]
 
 # Help message
 	tellraw @a ["",{"text":"\u00A7m                                                                                ","color":"dark_gray"}]
@@ -22,9 +22,21 @@
 	gamerule maxCommandChainLength 1000000000
 
 # load.mcfunction
-	scoreboard objectives add grass_timer dummy
+	scoreboard objectives add path_timer dummy
 
 # optional settings
+	scoreboard objectives add podzol_path dummy
+	scoreboard players set @a podzol_path 0
+
+	scoreboard objectives add mycelium_path dummy
+	scoreboard players set @a mycelium_path 0
+
+	scoreboard objectives add nylium_path dummy
+	scoreboard players set @a nylium_path 0
+
+	scoreboard objectives add coarse_path dummy
+	scoreboard players set @a coarse_path 0
+
 	scoreboard objectives add sand_path dummy
 	scoreboard players set @a sand_path 0
 
@@ -34,8 +46,8 @@
 	scoreboard objectives add stone_path dummy
 	scoreboard players set @a stone_path 0
 
-	scoreboard objectives add mycelium_path dummy
-	scoreboard players set @a mycelium_path 0
+	scoreboard objectives add torch_path dummy
+	scoreboard players set @a torch_path 0
 
 # play sound
 	playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 0.03 1 0.03
