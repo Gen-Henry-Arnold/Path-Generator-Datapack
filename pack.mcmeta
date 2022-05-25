@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 8,
-		"description": "Automatically generate path block trails over frequently travelled areas!"
+		"pack_format": 9,
+		"description": "Automatically generate paths when travelling!"
 	}
 }
