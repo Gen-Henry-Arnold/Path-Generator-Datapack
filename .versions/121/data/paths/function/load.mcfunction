@@ -1,10 +1,10 @@
 # installation message
-	tellraw @a [{"text":"Path Generator Datapack V1.6 installed!","color":"green"}]
+	tellraw @a [{"text":"Path Generator Datapack Minecraft 1.21 enabled ","color":"green"}]
 
 # Help message
 	tellraw @a ["",{"text":"\u00A7m                                                                                ","color":"dark_gray"}]
 
-	tellraw @a ["",{"text":"                     Path Generator Datapack for 1.19"}]
+	tellraw @a ["",{"text":"                     Path Generator Datapack for Minecraft 1.21"}]
 
 	tellraw @a ["",{"text":"\u00A7m                                                                                ","color":"dark_gray"}]
 
