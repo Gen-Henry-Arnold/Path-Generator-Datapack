@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:simple",
+  "title": {"text": "Path Generator Settings", "color": "gold"},
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {"text": "Check options to enable, uncheck to disable. Settings apply to all players. Conversion time is in ticks (20 ticks = 1 second, default: 75)."}
+    }
+  ],
+  "inputs": [
+    {"type": "minecraft:boolean", "key": "podzol_path",   "label": {"text": "Podzol → Dirt"},                   "initial": false},
+    {"type": "minecraft:boolean", "key": "coarse_path",   "label": {"text": "Coarse Dirt → Dirt"},             "initial": false},
+    {"type": "minecraft:boolean", "key": "mycelium_path", "label": {"text": "Mycelium → Dirt"},                 "initial": false},
+    {"type": "minecraft:boolean", "key": "stone_path",    "label": {"text": "Stone → Cobblestone"},             "initial": false},
+    {"type": "minecraft:boolean", "key": "sand_path",     "label": {"text": "Sand → Sandstone"},                "initial": false},
+    {"type": "minecraft:boolean", "key": "redsand_path",  "label": {"text": "Red Sand → Red Sandstone"},        "initial": false},
+    {"type": "minecraft:boolean", "key": "nylium_path",   "label": {"text": "Nylium → Netherrack"},             "initial": false},
+    {"type": "minecraft:boolean", "key": "deep_path",     "label": {"text": "Cobblestone → Deepslate"},         "initial": false},
+    {"type": "minecraft:boolean", "key": "deepc_path",    "label": {"text": "Deepslate → Cobbled Deepslate"},   "initial": false},
+    {"type": "minecraft:boolean", "key": "torch_path",    "label": {"text": "Auto Place Torches"},                   "initial": false},
+    {
+      "type": "minecraft:text",
+      "key": "convert_time",
+      "label": {"text": "Conversion Time (ticks)"},
+      "initial": "75",
+      "max_length": 6
+    }
+  ],
+  "action": {
+    "label": {"text": "Apply Settings"},
+    "on_click": {
+      "type": "minecraft:run_command",
+      "command": "/function paths:settings/apply {podzol_path:$(podzol_path),coarse_path:$(coarse_path),mycelium_path:$(mycelium_path),stone_path:$(stone_path),sand_path:$(sand_path),redsand_path:$(redsand_path),nylium_path:$(nylium_path),deep_path:$(deep_path),deepc_path:$(deepc_path),torch_path:$(torch_path),convert_time:$(convert_time)}"
+    }
+  }
+}
