@@ -1,6 +1,7 @@
 {
-	"pack": {
-		"pack_format": 81,
-		"description": "Automatically generate paths when travelling! (Minecraft 26.2)"
-	}
+  "pack": {
+    "description": "Automatically generate paths when travelling! (Minecraft 26.2)",
+    "min_format": 80,
+    "max_format": 107.1
+  }
 }
