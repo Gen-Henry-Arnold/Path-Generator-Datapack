@@ -1,0 +1,107 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {"text": "Path Generator Datapack", "bold": true, "color": "green"},
+    "external_title": {"text": "Path Datapack Settings"},
+    "inputs": [
+        {
+            "type": "minecraft:boolean",
+            "key": "grass",
+            "label": {"text": "Grass → Dirt → Dirt Path"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "stone",
+            "label": {"text": "Stone → Cobblestone → Cobbled Deepslate"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "coarse_dirt",
+            "label": {"text": "Coarse Dirt → Dirt"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "deepslate",
+            "label": {"text": "Deepslate → Cobbled Deepslate"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "mycelium",
+            "label": {"text": "Mycelium → Dirt"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "nylium",
+            "label": {"text": "Nylium → Netherrack"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "podzol",
+            "label": {"text": "Podzol → Dirt"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "sand",
+            "label": {"text": "Sand → Sandstone"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:boolean",
+            "key": "red_sand",
+            "label": {"text": "Red Sand → Red Sandstone"},
+            "initial": true,
+            "on_true": "1",
+            "on_false": "0"
+        },
+        {
+            "type": "minecraft:number_range",
+            "key": "seconds",
+            "label": {"text": "Generation Frequency (seconds)"},
+            "start": 1.0,
+            "end": 10.0,
+            "step": 1.0,
+            "initial": 2.0
+        },
+        {
+            "type": "minecraft:number_range",
+            "key": "path_size",
+            "label": {"text": "Path Size x"},
+            "start": 1.0,
+            "end": 5.0,
+            "step": 2.0,
+            "initial": 1.0
+        }
+    ],
+    "actions": [
+        {
+            "label": {"text": "Apply"},
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "function footpath:apply {grass:$(grass),stone:$(stone),coarse_dirt:$(coarse_dirt),deepslate:$(deepslate),mycelium:$(mycelium),nylium:$(nylium),podzol:$(podzol),sand:$(sand),red_sand:$(red_sand),path_size:$(path_size),seconds:$(seconds)}"
+            }
+        }
+    ],
+    "columns": 1
+}

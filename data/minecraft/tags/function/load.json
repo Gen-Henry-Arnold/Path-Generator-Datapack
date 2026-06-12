@@ -1,5 +1,3 @@
 {
-    "values": [
-        "paths:load"
-    ]
+    "values": ["footpath:load"]
 }

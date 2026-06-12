@@ -1,7 +1,7 @@
 {
-  "pack": {
-    "description": "Automatically generate paths when travelling! (Minecraft 26.2)",
-    "min_format": 80,
-    "max_format": 107.1
-  }
+    "pack": {
+        "description": "Path Generator Datapack — generates paths under your feet over time",
+        "min_format": 88,
+        "max_format": 107.1
+    }
 }

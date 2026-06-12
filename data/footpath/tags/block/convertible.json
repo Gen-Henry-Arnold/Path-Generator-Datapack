@@ -1,0 +1,16 @@
+{
+    "values": [
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:coarse_dirt",
+        "minecraft:stone",
+        "minecraft:cobblestone",
+        "minecraft:deepslate",
+        "minecraft:mycelium",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+        "minecraft:podzol",
+        "minecraft:sand",
+        "minecraft:red_sand"
+    ]
+}
