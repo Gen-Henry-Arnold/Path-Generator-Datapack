@@ -20,8 +20,8 @@ execute if score #grass fp.settings matches 1 if block ~ ~-1 ~ minecraft:dirt ru
 # --- STONE PATH (toggle: #stone fp.settings) ---
 # Step 1: Stone -> Cobblestone
 execute if score #stone fp.settings matches 1 if block ~ ~-1 ~ minecraft:stone run return run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:cobblestone replace minecraft:stone
-# Step 2: Cobblestone -> Cobbled Deepslate
-execute if score #stone fp.settings matches 1 if block ~ ~-1 ~ minecraft:cobblestone run return run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:cobbled_deepslate replace minecraft:cobblestone
+# Step 2: Cobblestone -> Mossy Cobblestone
+execute if score #stone fp.settings matches 1 if block ~ ~-1 ~ minecraft:cobblestone run return run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:mossy_cobblestone replace minecraft:cobblestone
 
 # --- COARSE DIRT -> DIRT (toggle: #coarse_dirt fp.settings) ---
 execute if score #coarse_dirt fp.settings matches 1 if block ~ ~-1 ~ minecraft:coarse_dirt run return run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:dirt replace minecraft:coarse_dirt

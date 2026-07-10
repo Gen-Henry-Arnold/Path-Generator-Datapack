@@ -14,7 +14,7 @@
         {
             "type": "minecraft:boolean",
             "key": "stone",
-            "label": {"text": "Stone → Cobblestone → Cobbled Deepslate"},
+            "label": {"text": "Stone → Cobblestone → Mossy Cobblestone"},
             "initial": true,
             "on_true": "1",
             "on_false": "0"
